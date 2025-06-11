@@ -1,84 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kowsik S | Electrical Portfolio</title>
+  <title>Kowsik S | Electrical Engineer Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0e6a0f7.js" crossorigin="anonymous"></script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
 
-  <header class="bg-white shadow p-6">
-    <div class="max-w-4xl mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-blue-700">Kowsik S</h1>
-      <p class="text-sm text-gray-500">Electrical Innovator | Embedded Systems | EV Enthusiast</p>
-    </div>
-  </header>
+<body class="bg-gray-50 text-gray-800 font-sans">
 
-  <main class="max-w-4xl mx-auto py-10 px-4">
-    <section class="mb-10">
-      <h2 class="text-xl font-semibold border-b border-gray-300 pb-2 mb-4">About Me</h2>
-      <p>
-        I’m an Electrical Engineering student passionate about building real-world embedded systems, power electronics solutions, and smart mobility tech. I combine theoretical insights with hands-on innovation, from EV traction systems to survival wearables and smart grid models.
+  <!-- Hero Section -->
+  <section class="bg-blue-800 text-white py-10 px-4 text-center">
+    <h1 class="text-4xl font-bold mb-2">Kowsik S</h1>
+    <p class="text-lg">Electrical Engineer | EV Architect | Embedded Systems Developer</p>
+    <p class="mt-4 text-sm">Turning circuits, code, and creativity into intelligent systems 🚀</p>
+  </section>
+
+  <main class="max-w-6xl mx-auto px-4 py-12">
+
+    <!-- About Section -->
+    <section id="about" class="mb-16">
+      <h2 class="text-2xl font-semibold border-b-2 border-blue-600 pb-2 mb-4">👋 About Me</h2>
+      <p class="text-gray-700 text-lg">
+        I’m a final-year Electrical & Electronics Engineering student from Amrita Vishwa Vidyapeetham with a passion for EV systems, embedded design, and applied machine learning. I blend rigorous academic training with real-world prototyping — whether it's a traction control system, a survival gadget, or a smart power supply, I believe engineering must impact lives.
       </p>
     </section>
 
-    <section class="mb-10">
-      <h2 class="text-xl font-semibold border-b border-gray-300 pb-2 mb-4">Skills</h2>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-3 text-sm">
-        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">MATLAB/Simulink</span>
-        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">Embedded Systems</span>
-        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">EV Architecture</span>
-        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">IoT Integration</span>
-        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">Power Electronics</span>
-        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">Machine Learning</span>
+    <!-- Skills Section -->
+    <section id="skills" class="mb-16">
+      <h2 class="text-2xl font-semibold border-b-2 border-blue-600 pb-2 mb-4">🛠️ Skills</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-sm">
+        <div>
+          <h3 class="font-bold text-blue-700 mb-2">Electrical Systems</h3>
+          <ul class="list-disc list-inside text-gray-700">
+            <li>Power Electronics (Buck, Boost, Inverter)</li>
+            <li>EV Traction Systems</li>
+            <li>Smart Grid Fault Detection</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-blue-700 mb-2">Embedded & Hardware</h3>
+          <ul class="list-disc list-inside text-gray-700">
+            <li>Raspberry Pi, ESP32, Arduino</li>
+            <li>CAN Protocol, GPIOs, Sensors</li>
+            <li>Real-time Embedded Integration</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-blue-700 mb-2">Simulation & Programming</h3>
+          <ul class="list-disc list-inside text-gray-700">
+            <li>MATLAB, Simulink, LTspice</li>
+            <li>C/C++, Python</li>
+            <li>ML for Electrical Fault Prediction</li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <section class="mb-10">
-      <h2 class="text-xl font-semibold border-b border-gray-300 pb-2 mb-4">Featured Projects</h2>
-      <ul class="space-y-4">
-        <li>
-          <h3 class="font-bold text-blue-600">🚗 Traction Control System – EV</h3>
-          <p class="text-sm">Developed for Formula Electric Vehicle, awarded at SUPRA 2024. Led control strategy and safety compliance.</p>
-        </li>
-        <li>
-          <h3 class="font-bold text-blue-600">📦 Smart DC Power Supply</h3>
-          <p class="text-sm">Built multi-rail digitally regulated power supply for lab and embedded use.</p>
-        </li>
-        <li>
-          <h3 class="font-bold text-blue-600">🧠 Smart Grid Fault Detection (ML)</h3>
-          <p class="text-sm">Simulink + ML integration for classification and regression-based predictive analytics using real-world data.</p>
-        </li>
-        <li>
-          <h3 class="font-bold text-blue-600">🛡️ Survival SOS Wearable</h3>
-          <p class="text-sm">ESP32-based device with GPS, blockchain, and AI alerts tailored for children, women, and elderly safety.</p>
-        </li>
+    <!-- Projects Section -->
+    <section id="projects" class="mb-16">
+      <h2 class="text-2xl font-semibold border-b-2 border-blue-600 pb-2 mb-6">🚀 Projects</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Project Card -->
+        <div class="bg-white shadow-lg p-6 rounded-lg">
+          <h3 class="font-bold text-blue-600 text-xl">EV Traction Control System</h3>
+          <p class="text-sm text-gray-600 mt-2">
+            Developed for a Formula EV racecar; integrated torque control and wheel-slip logic. Winner at SAEINDIA SUPRA.
+          </p>
+        </div>
+        <div class="bg-white shadow-lg p-6 rounded-lg">
+          <h3 class="font-bold text-blue-600 text-xl">Smart Grid Fault Detection (ML + Simulink)</h3>
+          <p class="text-sm text-gray-600 mt-2">
+            Created a machine learning model trained on sensor data for detecting fault, extreme, and normal modes using MATLAB/Simulink.
+          </p>
+        </div>
+        <div class="bg-white shadow-lg p-6 rounded-lg">
+          <h3 class="font-bold text-blue-600 text-xl">Digitally Controlled Power Supply</h3>
+          <p class="text-sm text-gray-600 mt-2">
+            Designed a buck-boost multi-output lab-grade supply with analog control loop and digital monitoring.
+          </p>
+        </div>
+        <div class="bg-white shadow-lg p-6 rounded-lg">
+          <h3 class="font-bold text-blue-600 text-xl">Survival SOS Wearable Device</h3>
+          <p class="text-sm text-gray-600 mt-2">
+            Designed a compact ESP32-based gadget with GPS, vibration alerts, child safety features, and offline blockchain-ready modules.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="mb-16">
+      <h2 class="text-2xl font-semibold border-b-2 border-blue-600 pb-2 mb-4">📅 Experience</h2>
+      <div class="relative border-l-2 border-blue-600 ml-4">
+        <div class="ml-6 mb-6">
+          <h4 class="font-bold text-blue-700">Electrical Safety Officer – Team Amrita Racing</h4>
+          <p class="text-sm text-gray-600">SUPRA 2024 | Traction Control & Safety Design</p>
+        </div>
+        <div class="ml-6 mb-6">
+          <h4 class="font-bold text-blue-700">Workshop Leader – EV Charging & Apache Superset</h4>
+          <p class="text-sm text-gray-600">Planned and conducted technical workshops under Anokha’24</p>
+        </div>
+        <div class="ml-6 mb-6">
+          <h4 class="font-bold text-blue-700">In-Plant Trainee – Ashok Leyland, Hosur</h4>
+          <p class="text-sm text-gray-600">Worked on power systems, load management, solar integration</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="mb-16">
+      <h2 class="text-2xl font-semibold border-b-2 border-blue-600 pb-2 mb-4">📜 Certifications</h2>
+      <ul class="list-disc list-inside text-gray-700 text-sm">
+        <li>MATLAB Onramp, Simulink Onramp – MathWorks</li>
+        <li>Apache Superset Workshop – Data Visualization</li>
+        <li>SAEINDIA EV Competition Winner – Static Events</li>
       </ul>
     </section>
 
-    <section class="mb-10">
-      <h2 class="text-xl font-semibold border-b border-gray-300 pb-2 mb-4">Experience & Roles</h2>
-      <ul class="space-y-3 text-sm">
-        <li><strong>Electrical Safety Officer</strong> – Team Amrita Racing (EV, SUPRA 2024)</li>
-        <li><strong>Co-Head</strong> – Anokha’24 EEE Workshops</li>
-        <li><strong>Workshop Speaker</strong> – EV Charging Infra, Apache Superset</li>
-        <li><strong>In-Plant Trainee</strong> – Ashok Leyland, Hosur (Power Systems)</li>
-      </ul>
-    </section>
-
-    <section class="mb-10">
-      <h2 class="text-xl font-semibold border-b border-gray-300 pb-2 mb-4">Contact</h2>
-      <ul class="text-sm space-y-1">
-        <li>Email: <a href="mailto:youremail@example.com" class="text-blue-600 underline">youremail@example.com</a></li>
-        <li>GitHub: <a href="https://github.com/yourgithub" target="_blank" class="text-blue-600 underline">github.com/yourgithub</a></li>
-        <li>LinkedIn: <a href="https://linkedin.com/in/yourlinkedin" target="_blank" class="text-blue-600 underline">linkedin.com/in/yourlinkedin</a></li>
+    <!-- Contact Section -->
+    <section id="contact" class="mb-12">
+      <h2 class="text-2xl font-semibold border-b-2 border-blue-600 pb-2 mb-4">📫 Contact</h2>
+      <p class="text-gray-700 text-sm mb-2">Let’s connect and build something impactful!</p>
+      <ul class="text-sm text-blue-600">
+        <li><i class="fas fa-envelope mr-2"></i><a href="mailto:youremail@example.com" class="underline">youremail@example.com</a></li>
+        <li><i class="fab fa-linkedin mr-2"></i><a href="https://linkedin.com/in/yourlinkedin" target="_blank" class="underline">linkedin.com/in/yourlinkedin</a></li>
+        <li><i class="fab fa-github mr-2"></i><a href="https://github.com/yourgithub" target="_blank" class="underline">github.com/yourgithub</a></li>
       </ul>
     </section>
   </main>
 
-  <footer class="text-center text-xs text-gray-400 py-6 border-t border-gray-200">
-    &copy; 2025 Kowsik S • Built with ❤️ and Tailwind CSS
+  <footer class="bg-gray-200 text-center text-xs py-4 text-gray-600">
+    &copy; 2025 Kowsik S • Made with ⚡ and Purpose
   </footer>
+
 </body>
 </html>
