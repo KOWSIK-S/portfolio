@@ -6,163 +6,230 @@
   <title>Kowsik S | Electrical Engineer Portfolio</title>
   <style>
     :root {
-      --primary: #1a2b4c;
-      --secondary: #3d4e68;
-      --accent: #e0e6ef;
-      --bg: #f8fafc;
-      --text: #2d3748;
+      --bg: #f3f6f9;
+      --primary: #013220;
+      --highlight: #16a085;
+      --text: #1a1a1a;
+      --muted: #555;
+      --card: #ffffff;
+      --accent-bg: #e6f4f1;
     }
 
     body {
-      font-family: 'Segoe UI', Tahoma, sans-serif;
       margin: 0;
-      background-color: var(--bg);
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: var(--bg);
       color: var(--text);
     }
 
     header {
-      background-color: var(--primary);
+      background: linear-gradient(135deg, #013220, #024731);
       color: white;
-      padding: 2rem;
+      padding: 3rem 1rem;
       text-align: center;
     }
 
     header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
     }
 
     header p {
-      margin-top: 0.5rem;
-      font-size: 1rem;
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: auto;
     }
 
     main {
-      max-width: 960px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      max-width: 1080px;
+      margin: auto;
+      padding: 2rem 1rem;
     }
 
     section {
-      margin-bottom: 2.5rem;
+      margin-bottom: 3rem;
     }
 
     h2 {
-      font-size: 1.5rem;
-      border-left: 5px solid var(--primary);
-      padding-left: 0.5rem;
-      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      border-left: 6px solid var(--highlight);
+      padding-left: 0.75rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .pill {
+      display: inline-block;
+      background: var(--highlight);
+      color: white;
+      padding: 0.3rem 0.8rem;
+      border-radius: 99px;
+      font-size: 0.75rem;
+      margin-right: 0.5rem;
+      margin-top: 0.5rem;
     }
 
     ul {
       padding-left: 1.5rem;
     }
 
-    .card {
-      background-color: white;
-      border: 1px solid var(--accent);
-      border-radius: 6px;
-      padding: 1rem;
-      margin-bottom: 1rem;
-    }
-
-    footer {
-      background-color: var(--secondary);
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-    }
-
-    .contact a {
-      color: var(--primary);
+    a {
+      color: var(--highlight);
       text-decoration: none;
     }
 
-    .contact a:hover {
+    a:hover {
       text-decoration: underline;
+    }
+
+    footer {
+      background: var(--primary);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .description {
+      color: var(--muted);
+      font-size: 0.95rem;
     }
   </style>
 </head>
-
 <body>
 
   <header>
     <h1>Kowsik S</h1>
-    <p>Electrical Engineer | Embedded Systems Developer | EV & Power Systems Enthusiast</p>
+    <p>Electrical Engineer • EV Systems Developer • Embedded & AI Innovator • Simulation Specialist</p>
   </header>
 
   <main>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I’m an aspiring Electrical and Electronics Engineer from Amrita Vishwa Vidyapeetham, passionate about building intelligent embedded systems, EV traction technology, and applying ML to electrical systems. My work bridges hands-on electronics, control systems, and real-world innovations for safety and sustainability.
-      </p>
-    </section>
-
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>MATLAB & Simulink modeling, analysis, and fault classification</li>
-        <li>Embedded systems (ESP32, Raspberry Pi, CAN bus)</li>
-        <li>Power electronics: Buck/Boost converters, DC-DC design</li>
-        <li>Electric Vehicle architecture & traction control systems</li>
-        <li>IoT and sensor integration for real-time monitoring</li>
-      </ul>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
+    <!-- About Me -->
+    <section>
+      <h2>🔧 About Me</h2>
       <div class="card">
-        <strong>EV Traction Control System</strong>
-        <p>Developed for a Formula Electric Vehicle. Focused on torque control, traction logic, and electrical safety. Won static event at SUPRA 2024.</p>
-      </div>
-      <div class="card">
-        <strong>Smart DC Regulated Power Supply</strong>
-        <p>Digitally aware buck-boost lab supply with analog control and real-time monitoring for embedded and IoT testing.</p>
-      </div>
-      <div class="card">
-        <strong>Machine Learning Based Smart Grid Fault Detection</strong>
-        <p>Used classification and regression models trained on electrical parameters to predict fault modes, integrated in MATLAB Simulink.</p>
-      </div>
-      <div class="card">
-        <strong>Multi-purpose SOS Survival Wearable</strong>
-        <p>ESP32-based device with GPS, alert system, blockchain compatibility for child, women, elderly and disaster safety use.</p>
+        <p>
+          I am currently pursuing a B.Tech in Electrical & Electronics Engineering with a minor in Artificial Intelligence & Machine Learning from Amrita Vishwa Vidyapeetham, Coimbatore. My academic focus lies in <strong>Electric Vehicle Systems, Smart Grid Technologies, Embedded IoT Devices, Power Electronics, and ML-integrated Control Systems</strong>.
+        </p>
+        <p>
+          I bring hands-on experience in embedded hardware, PCB design, system simulations, and safety-focused EV control logic. As a Senior Electrical Design Engineer for Team Amrita Racing and a frequent hackathon participant, I’m passionate about applying intelligent design to real-world engineering problems.
+        </p>
       </div>
     </section>
 
-    <section id="experience">
-      <h2>Experience</h2>
-      <ul>
-        <li><strong>Electrical Safety Officer</strong> – Team Amrita Racing, SAEINDIA SUPRA 2024</li>
-        <li><strong>Workshop Speaker</strong> – EV Charging Infrastructure, Apache Superset (Anokha'24)</li>
-        <li><strong>In-plant Trainee</strong> – Ashok Leyland, Power & Utilities Systems (Hosur)</li>
-      </ul>
+    <!-- Skills -->
+    <section>
+      <h2>⚙️ Technical Skills</h2>
+      <div class="card">
+        <ul>
+          <li><strong>Simulation & Modeling:</strong> MATLAB/Simulink, LTspice, Proteus, LabVIEW</li>
+          <li><strong>Embedded Systems:</strong> Raspberry Pi, ESP32, STM32, PIC Microcontrollers</li>
+          <li><strong>Hardware Design:</strong> PCB Design (Altium, EasyEDA), Breadboarding, Signal Conditioning</li>
+          <li><strong>Programming Languages:</strong> Python, C, Embedded C, MATLAB Scripting</li>
+          <li><strong>Tools & Frameworks:</strong> Apache Superset, Firebase, IoT Dashboards, ThingSpeak</li>
+          <li><strong>Domains:</strong> Power Electronics, EV Architecture, Sensor Networks, Control Systems, ML for Fault Detection</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="certifications">
-      <h2>Certifications</h2>
-      <ul>
-        <li>MATLAB Onramp, Simulink Onramp – MathWorks</li>
-        <li>Apache Superset Workshop – Dashboard Design</li>
-        <li>SAEINDIA SUPRA – Static Event Winner (EV Category)</li>
-      </ul>
+    <!-- Projects -->
+    <section>
+      <h2>🚀 Projects & Prototypes</h2>
+
+      <div class="card">
+        <strong>Smart SOS Safety Wearable (2024 – Present)</strong>
+        <p class="description">IoT-based wearable device for women/children/seniors offering geofencing, silent alerts, route deviation warnings, and offline blockchain functionality with GPS and vibration motor integration.</p>
+        <span class="pill">IoT</span><span class="pill">ESP32</span><span class="pill">GPS</span><span class="pill">Blockchain</span>
+      </div>
+
+      <div class="card">
+        <strong>EV Charging Station Optimization (2025)</strong>
+        <p class="description">Forecasts EVSE demand using real-world Indian datasets, classifies sessions, and optimizes charger allocation using mathematical optimization models.</p>
+        <span class="pill">EV</span><span class="pill">Optimization</span><span class="pill">Data Modeling</span>
+      </div>
+
+      <div class="card">
+        <strong>Fire-Fighting Obstacle Avoidance Robot (2025)</strong>
+        <p class="description">Custom microcontroller-based robot using IR and flame sensors, servo motors, and path-logging via SD card. Built using two PIC16F877A chips.</p>
+        <span class="pill">IR Sensors</span><span class="pill">Microcontrollers</span><span class="pill">Path Planning</span>
+      </div>
+
+      <div class="card">
+        <strong>IoT-based Smart DC Grid Controller (2024)</strong>
+        <p class="description">Designed a 24-hour real-time energy exchange and control system for DC microgrids, integrating automated load/source switching and analytics dashboards.</p>
+        <span class="pill">Smart Grid</span><span class="pill">IoT</span><span class="pill">Energy Bidding</span>
+      </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p class="contact">
-        Email: <a href="mailto:youremail@example.com">youremail@example.com</a><br>
-        GitHub: <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a><br>
-        LinkedIn: <a href="https://linkedin.com/in/yourlinkedin" target="_blank">linkedin.com/in/yourlinkedin</a>
-      </p>
+    <!-- Professional Experience -->
+    <section>
+      <h2>💼 Experience</h2>
+
+      <div class="card">
+        <strong>Senior Electrical Design Engineer – Team Amrita Racing</strong>
+        <p class="description">Designed HV systems, implemented PCB layouts, ensured safety standards for electric race cars. ESO for E02 vehicle in SUPRA 2024.</p>
+      </div>
+
+      <div class="card">
+        <strong>Implant Trainee – Ashok Leyland, Hosur</strong>
+        <p class="description">Worked in quality control, plant maintenance, and power system planning. Learned 5S, solar integration, substation management.</p>
+      </div>
+
+      <div class="card">
+        <strong>Co-Head, EEE Workshops – Anokha 2024</strong>
+        <p class="description">Led workshops on EV Charging Infra, IoT Design, Altair Simulation. Managed content, logistics, and participant engagement.</p>
+      </div>
+    </section>
+
+    <!-- Hackathons -->
+    <section>
+      <h2>🏆 Hackathons & Competitions</h2>
+      <div class="card">
+        <ul>
+          <li><strong>Intel AI Hackathon:</strong> Designed AI for solar placement & cost forecasting (Semi-Finalist)</li>
+          <li><strong>SAEINDIA SUPRA 2024:</strong> ESO for E02 Formula EV – EV Static Overall Winner</li>
+          <li><strong>K Hacks! (CEG Tech Forum):</strong> Dual-axis dust-shielded solar tracker for space use</li>
+          <li><strong>Pragyan @ NIT Trichy:</strong> DIY RC race car with wireless comm using Pi Pico, ESP32</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Extracurricular -->
+    <section>
+      <h2>🌱 Leadership & Outreach</h2>
+      <div class="card">
+        <ul>
+          <li><strong>NSS Volunteer:</strong> Participated in national service activities like Sevanavaram, Yoga Challenge, Amritavarsham 70</li>
+          <li><strong>Equity Officer – Amrita MUN’24:</strong> Managed event execution and media coordination</li>
+          <li><strong>Volunteer @TEDx Amrita:</strong> Helped organize 2024 TEDx conference on Pop Culture & Innovation</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section>
+      <h2>📬 Contact</h2>
+      <div class="card">
+        <p>
+          📧 Email: <a href="mailto:skowsik012@gmail.com">skowsik012@gmail.com</a><br>
+          💼 LinkedIn: <a href="https://linkedin.com/in/kowsik-s" target="_blank">linkedin.com/in/kowsik-s</a><br>
+          🔗 GitHub: <a href="https://github.com/kowsik-s" target="_blank">github.com/kowsik-s</a>
+        </p>
+      </div>
     </section>
 
   </main>
 
   <footer>
-    &copy; 2025 Kowsik S • Designed with passion for technology and impact.
+    © 2025 Kowsik S • Engineer. Innovator. Builder. <br>Crafted with Logic, Simulated with Precision.
   </footer>
 
 </body>
