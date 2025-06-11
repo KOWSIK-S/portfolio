@@ -6,81 +6,116 @@
   <title>Kowsik S | Electrical Engineer Portfolio</title>
   <style>
     :root {
-      --primary: #1a2b4c;
-      --secondary: #3d4e68;
-      --accent: #e0e6ef;
-      --bg: #f8fafc;
-      --text: #2d3748;
+      --primary: #163a5f;
+      --accent: #f3f6fa;
+      --text-dark: #1f2937;
+      --text-light: #6b7280;
+      --highlight: #2563eb;
+      --card-bg: #ffffff;
     }
 
     body {
-      font-family: 'Segoe UI', Tahoma, sans-serif;
       margin: 0;
-      background-color: var(--bg);
-      color: var(--text);
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background-color: var(--accent);
+      color: var(--text-dark);
     }
 
     header {
-      background-color: var(--primary);
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
       color: white;
-      padding: 2rem;
       text-align: center;
+      padding: 3rem 1rem;
     }
 
     header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
     }
 
     header p {
-      margin-top: 0.5rem;
-      font-size: 1rem;
+      font-size: 1.1rem;
+      color: #cbd5e1;
     }
 
     main {
       max-width: 960px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-
-    section {
-      margin-bottom: 2.5rem;
+      margin: auto;
+      padding: 2rem 1rem;
     }
 
     h2 {
-      font-size: 1.5rem;
-      border-left: 5px solid var(--primary);
-      padding-left: 0.5rem;
-      margin-bottom: 1rem;
+      font-size: 1.7rem;
+      border-left: 5px solid var(--highlight);
+      padding-left: 0.7rem;
+      margin-top: 3rem;
+      margin-bottom: 1.2rem;
     }
 
-    ul {
-      padding-left: 1.5rem;
+    .section {
+      margin-bottom: 2rem;
     }
 
     .card {
-      background-color: white;
-      border: 1px solid var(--accent);
-      border-radius: 6px;
-      padding: 1rem;
-      margin-bottom: 1rem;
+      background-color: var(--card-bg);
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .icon {
+      font-size: 2rem;
+      margin-right: 0.7rem;
+      vertical-align: middle;
+      color: var(--highlight);
+    }
+
+    ul {
+      list-style-type: square;
+      margin-left: 1.2rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1rem;
+    }
+
+    @media (min-width: 700px) {
+      .grid-2 { grid-template-columns: repeat(2, 1fr); }
+      .grid-3 { grid-template-columns: repeat(3, 1fr); }
     }
 
     footer {
-      background-color: var(--secondary);
+      background-color: var(--primary);
       color: white;
       text-align: center;
-      padding: 1rem;
+      padding: 1.5rem;
       font-size: 0.9rem;
     }
 
-    .contact a {
-      color: var(--primary);
+    a {
+      color: var(--highlight);
       text-decoration: none;
     }
 
-    .contact a:hover {
+    a:hover {
       text-decoration: underline;
+    }
+
+    .pill {
+      display: inline-block;
+      background-color: var(--highlight);
+      color: white;
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      margin-right: 0.5rem;
     }
   </style>
 </head>
@@ -89,80 +124,100 @@
 
   <header>
     <h1>Kowsik S</h1>
-    <p>Electrical Engineer | Embedded Systems Developer | EV & Power Systems Enthusiast</p>
+    <p>Electrical Engineer | EV Architect | Embedded Systems Developer</p>
   </header>
 
   <main>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I’m an aspiring Electrical and Electronics Engineer from Amrita Vishwa Vidyapeetham, passionate about building intelligent embedded systems, EV traction technology, and applying ML to electrical systems. My work bridges hands-on electronics, control systems, and real-world innovations for safety and sustainability.
-      </p>
+    <!-- About -->
+    <section class="section">
+      <h2>👤 About Me</h2>
+      <div class="card">
+        <p>
+          I am a final-year Electrical & Electronics student at Amrita Vishwa Vidyapeetham with a strong focus on EV systems, power electronics, and smart embedded solutions. My portfolio reflects not just my technical skillset, but also my drive to build systems that matter — for the road, the lab, or the field.
+        </p>
+      </div>
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>MATLAB & Simulink modeling, analysis, and fault classification</li>
-        <li>Embedded systems (ESP32, Raspberry Pi, CAN bus)</li>
-        <li>Power electronics: Buck/Boost converters, DC-DC design</li>
-        <li>Electric Vehicle architecture & traction control systems</li>
-        <li>IoT and sensor integration for real-time monitoring</li>
-      </ul>
+    <!-- Skills -->
+    <section class="section">
+      <h2>🛠️ Skills</h2>
+      <div class="grid grid-3">
+        <div class="card"><span class="icon">⚡</span><strong>Power Electronics</strong><br><small>Buck, Boost, Inverter Systems</small></div>
+        <div class="card"><span class="icon">🧠</span><strong>Embedded Systems</strong><br><small>ESP32, Raspberry Pi, GPIO, CAN</small></div>
+        <div class="card"><span class="icon">🧮</span><strong>Simulations</strong><br><small>MATLAB, Simulink, LTspice</small></div>
+        <div class="card"><span class="icon">🚘</span><strong>EV Architecture</strong><br><small>Motor Control, Traction, Safety</small></div>
+        <div class="card"><span class="icon">📊</span><strong>Data & AI</strong><br><small>ML for Fault Detection & Prediction</small></div>
+        <div class="card"><span class="icon">🌐</span><strong>Visualization</strong><br><small>Apache Superset, Dashboarding</small></div>
+      </div>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
+    <!-- Projects -->
+    <section class="section">
+      <h2>🚀 Projects</h2>
       <div class="card">
         <strong>EV Traction Control System</strong>
-        <p>Developed for a Formula Electric Vehicle. Focused on torque control, traction logic, and electrical safety. Won static event at SUPRA 2024.</p>
+        <p>Developed for SAEINDIA SUPRA Formula EV; integrated torque vectoring, slip logic, and thermal safety — awarded best static event.</p>
+        <span class="pill">Embedded</span><span class="pill">EV</span><span class="pill">Real-time</span>
       </div>
       <div class="card">
-        <strong>Smart DC Regulated Power Supply</strong>
-        <p>Digitally aware buck-boost lab supply with analog control and real-time monitoring for embedded and IoT testing.</p>
+        <strong>Smart Grid Fault Classifier (ML + Simulink)</strong>
+        <p>Designed a real-time system to detect faults, extreme conditions, and normal states using machine learning and MATLAB Simulink integration.</p>
+        <span class="pill">ML</span><span class="pill">Simulink</span><span class="pill">IoT</span>
       </div>
       <div class="card">
-        <strong>Machine Learning Based Smart Grid Fault Detection</strong>
-        <p>Used classification and regression models trained on electrical parameters to predict fault modes, integrated in MATLAB Simulink.</p>
+        <strong>Digitally Controlled Power Supply</strong>
+        <p>Multi-output buck-boost converter for lab use; analog loop with digital awareness, safety checks, and test automation support.</p>
+        <span class="pill">Hardware</span><span class="pill">Power Electronics</span>
       </div>
       <div class="card">
-        <strong>Multi-purpose SOS Survival Wearable</strong>
-        <p>ESP32-based device with GPS, alert system, blockchain compatibility for child, women, elderly and disaster safety use.</p>
+        <strong>Survival Wearable SOS Gadget</strong>
+        <p>ESP32S3-based wearable with GPS, vibration motor, route alert, child lock, and blockchain-ready offline SOS system.</p>
+        <span class="pill">IoT</span><span class="pill">GPS</span><span class="pill">Safety</span>
       </div>
     </section>
 
-    <section id="experience">
-      <h2>Experience</h2>
-      <ul>
-        <li><strong>Electrical Safety Officer</strong> – Team Amrita Racing, SAEINDIA SUPRA 2024</li>
-        <li><strong>Workshop Speaker</strong> – EV Charging Infrastructure, Apache Superset (Anokha'24)</li>
-        <li><strong>In-plant Trainee</strong> – Ashok Leyland, Power & Utilities Systems (Hosur)</li>
-      </ul>
+    <!-- Experience -->
+    <section class="section">
+      <h2>📅 Experience</h2>
+      <div class="card">
+        <ul>
+          <li><strong>Electrical Safety Officer</strong> – Team Amrita Racing, SUPRA’24</li>
+          <li><strong>Workshop Leader</strong> – EV Infra, Apache Superset (Anokha'24)</li>
+          <li><strong>In-Plant Trainee</strong> – Ashok Leyland, Hosur (Power Systems)</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="certifications">
-      <h2>Certifications</h2>
-      <ul>
-        <li>MATLAB Onramp, Simulink Onramp – MathWorks</li>
-        <li>Apache Superset Workshop – Dashboard Design</li>
-        <li>SAEINDIA SUPRA – Static Event Winner (EV Category)</li>
-      </ul>
+    <!-- Certifications -->
+    <section class="section">
+      <h2>📜 Certifications</h2>
+      <div class="card">
+        <ul>
+          <li>MATLAB & Simulink Onramp – MathWorks</li>
+          <li>Apache Superset Workshop – Data Viz</li>
+          <li>SAEINDIA EV Category – Static Winner</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p class="contact">
-        Email: <a href="mailto:youremail@example.com">youremail@example.com</a><br>
-        GitHub: <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a><br>
-        LinkedIn: <a href="https://linkedin.com/in/yourlinkedin" target="_blank">linkedin.com/in/yourlinkedin</a>
-      </p>
+    <!-- Contact -->
+    <section class="section">
+      <h2>📫 Contact</h2>
+      <div class="card">
+        <p>
+          Let’s connect and collaborate!<br><br>
+          <strong>Email:</strong> <a href="mailto:youremail@example.com">youremail@example.com</a><br>
+          <strong>GitHub:</strong> <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a><br>
+          <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourlinkedin" target="_blank">linkedin.com/in/yourlinkedin</a>
+        </p>
+      </div>
     </section>
 
   </main>
 
   <footer>
-    &copy; 2025 Kowsik S • Designed with passion for technology and impact.
+    &copy; 2025 Kowsik S • Designed with circuits, code, and clarity ⚡
   </footer>
 
 </body>
